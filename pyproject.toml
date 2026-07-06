@@ -1,10 +1,39 @@
 [project]
-name = "adapty-inbody-intelligence-system"
+name = "adapty-body-composition"
 version = "0.1.0"
-description = "FastAPI and Streamlit MVP for InBody-style body composition tracking."
+description = "FastAPI + Streamlit MVP for body composition tracking, progress classification, and clinician-grade reporting."
 readme = "README.md"
 requires-python = ">=3.11"
-authors = [{ name = "Victor Gomez" }]
+license = { file = "LICENSE" }
+authors = [
+    { name = "Víctor Andrés Gómez López", email = "victorgomeztrainer@gmail.com" }
+]
+keywords = [
+    "fastapi",
+    "streamlit",
+    "body-composition",
+    "bioelectrical-impedance",
+    "physiotherapy",
+    "sports-science",
+    "clinical-ai",
+    "portfolio",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: FastAPI",
+    "Intended Audience :: Healthcare Industry",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+
+[project.urls]
+Homepage = "https://github.com/victorgomezadapty/adapty-body-composition"
+Repository = "https://github.com/victorgomezadapty/adapty-body-composition"
+Issues = "https://github.com/victorgomezadapty/adapty-body-composition/issues"
+Author = "https://linkedin.com/in/victorgomezadapty"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -18,4 +47,3 @@ branch = true
 [tool.coverage.report]
 show_missing = true
 skip_covered = true
-
