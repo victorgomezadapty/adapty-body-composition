@@ -13,26 +13,26 @@ A portfolio-grade MVP for coaches, physiotherapists, and sports scientists worki
 
 ## Why this exists (from a physiotherapist's perspective)
 
-Most body composition tools stop at raw numbers. As a physiotherapist tracking clients across gym floors and clinical settings — and as someone building AI tools for clinical decision support — I found the same gap everywhere: coaches capture assessments but have no clean way to answer the two questions that actually matter:
+Most body composition tools stop at raw numbers. As a physiotherapist tracking clients across gym floors and clinical settings, and as someone building AI tools for clinical decision support, I found the same gap everywhere: coaches capture assessments but have no clean way to answer the two questions that actually matter:
 
 > **"Compared to what?"** (baseline) and **"Toward what?"** (goal)
 
-Off-the-shelf tools give you a PDF. What clinicians and coaches need is a system that: stores longitudinal assessments, computes deltas, classifies progress against a *specific goal* (fat loss vs. muscle gain vs. recomposition each have different success criteria), and generates coach-facing and client-facing reports in seconds.
+Off-the-shelf tools give you a PDF. What clinicians and coaches need is a system that stores longitudinal assessments, computes deltas, classifies progress against a *specific goal* (fat loss, muscle gain, and recomposition each have different success criteria), and generates coach-facing and client-facing reports in seconds.
 
-That's what this project is. The classification logic reflects how I actually assess progress in practice — not generic CRUD.
+That is what this project is. The classification logic reflects how I actually assess progress in practice, rather than a generic CRUD layer.
 
 ---
 
 ## Features
 
-- **Client management** — CRUD lifecycle
-- **BIA assessment tracking** — 8 body composition metrics per record
-- **Goals + plans** — attach goal type (fat_loss / muscle_gain / recomposition) per client
-- **Progress classification** — first-vs-latest analysis with goal-aware rules
-- **Dual reporting** — coach-facing (technical) and client-facing (plain language)
-- **Synthetic seed data** — realistic demo dataset for exploration
-- **Streamlit dashboard** — visual companion to the API
-- **Test coverage** — pytest + coverage with CI/CD on every push
+- **Client management:** CRUD lifecycle
+- **BIA assessment tracking:** 8 body composition metrics per record
+- **Goals and plans:** attach goal type (fat_loss / muscle_gain / recomposition) per client
+- **Progress classification:** first-vs-latest analysis with goal-aware rules
+- **Dual reporting:** coach-facing (technical) and client-facing (plain language)
+- **Synthetic seed data:** realistic demo dataset for exploration
+- **Streamlit dashboard:** visual companion to the API
+- **Test coverage:** pytest + coverage with CI/CD on every push
 
 ---
 
@@ -126,16 +126,16 @@ Body composition records:
 - `GET /clients/{client_id}/body-records`
 - `GET /body-records` · `GET /body-records/{id}` · `PATCH /body-records/{id}` · `DELETE /body-records/{id}`
 
-Goals + plans:
+Goals and plans:
 
 - `POST /clients/{client_id}/goals` · `PATCH /goals/{id}` · `DELETE /goals/{id}`
 - `POST /clients/{client_id}/plans` · `PATCH /plans/{id}` · `DELETE /plans/{id}`
 
 Reports:
 
-- `GET /clients/{client_id}/summary` — computed progress snapshot
-- `GET /clients/{client_id}/coach-report` — technical detail for the coach
-- `GET /clients/{client_id}/client-report` — plain-language version for the client
+- `GET /clients/{client_id}/summary` returns a computed progress snapshot
+- `GET /clients/{client_id}/coach-report` returns technical detail for the coach
+- `GET /clients/{client_id}/client-report` returns a plain-language version for the client
 
 ---
 
@@ -156,13 +156,13 @@ The classification thresholds are *educational coaching rules* informed by ACSM 
 
 ## Roadmap
 
-- [ ] **Benchmarks** — percentiles and z-scores by age group, sex, and goal
-- [ ] **Predictive models** — recomposition trajectory with confidence intervals
-- [ ] **Nutrition guidance engine** — heuristic macro/calorie recommendations from goal + measurements
-- [ ] **AI coach assistant** — natural-language explanations of progress deltas
-- [ ] **BIA data import** — CSV/JSON parsers for common BIA formats
-- [ ] **Auth + roles** — coach / physio / admin permissions
-- [ ] **Cloud deployment** — Streamlit Cloud demo + Railway/Fly API
+- [ ] **Benchmarks:** percentiles and z-scores by age group, sex, and goal
+- [ ] **Predictive models:** recomposition trajectory with confidence intervals
+- [ ] **Nutrition guidance engine:** heuristic macro/calorie recommendations from goal and measurements
+- [ ] **AI coach assistant:** natural-language explanations of progress deltas
+- [ ] **BIA data import:** CSV/JSON parsers for common BIA formats
+- [ ] **Auth and roles:** coach / physio / admin permissions
+- [ ] **Cloud deployment:** Streamlit Cloud demo plus Railway/Fly API
 
 ---
 
@@ -170,13 +170,13 @@ The classification thresholds are *educational coaching rules* informed by ACSM 
 
 This project is for **educational and portfolio purposes** and operates exclusively on **synthetic data**. It does not provide medical diagnosis and does not replace professional clinical judgment. Do not use with real patient data without adding proper authentication, audit logging, and applicable healthcare compliance (HIPAA / GDPR / local regulations).
 
-*"InBody"* and other BIA brand names, where they appear in documentation, refer to the general category of bioelectrical impedance analysis. This project is **not affiliated with or endorsed by InBody Co., Ltd. or any BIA device manufacturer**.
+*"InBody"* and other BIA brand names, where they appear in documentation, refer to the general category of bioelectrical impedance analysis. This project is not affiliated with or endorsed by InBody Co., Ltd. or any BIA device manufacturer.
 
 ---
 
 ## Author
 
-Built by **Víctor Andrés Gómez López** — physiotherapist, doctoral researcher in physical activity and sport, founder of [ADAPTY](https://adapty.global). Currently Head Physiotherapist at Optimo Gym (Riyadh) and building clinical AI tools full time.
+Built by **Víctor Andrés Gómez López**, physiotherapist, doctoral researcher in physical activity and sport, founder of [ADAPTY](https://adapty.global). Currently Head Physiotherapist at Optimo Gym (Riyadh) and building clinical AI tools full time.
 
 - LinkedIn: [linkedin.com/in/victorgomezadapty](https://linkedin.com/in/victorgomezadapty)
 - Other projects: [physioflow](https://github.com/victorgomezadapty/physioflow) · [ADAPTY](https://adapty.global)
@@ -185,4 +185,4 @@ Built by **Víctor Andrés Gómez López** — physiotherapist, doctoral researc
 
 ## License
 
-MIT — see [LICENSE](./LICENSE).
+MIT, see [LICENSE](./LICENSE).
