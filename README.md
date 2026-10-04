@@ -5,7 +5,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-**FastAPI backend + Streamlit dashboard for body composition tracking, coaching progress classification, and clinician-grade reporting.**
+**FastAPI backend + Streamlit dashboard for body composition tracking, coaching progress classification, and coach and clinician-facing reporting.**
 
 A portfolio-grade MVP for coaches, physiotherapists, and sports scientists working with bioelectrical impedance analysis (BIA) data.
 
@@ -176,7 +176,7 @@ This project is for **educational and portfolio purposes** and operates exclusiv
 
 ## Author
 
-Built by **Víctor Andrés Gómez López**, physiotherapist, doctoral researcher in physical activity and sport, founder of [ADAPTY](https://adapty.global). Currently Head Physiotherapist at Optimo Gym (Riyadh) and building clinical AI tools full time.
+Built by **Víctor Andrés Gómez López**. Based in Riyadh, Víctor works as a Personal Trainer and supports the implementation, integration, and consistent delivery of physiotherapy services across three fitness clubs. He is also a doctoral researcher and founder of [ADAPTY](https://adapty.global), building human-supervised health-data and decision-support prototypes.
 
 - LinkedIn: [linkedin.com/in/victorgomezadapty](https://linkedin.com/in/victorgomezadapty)
 - Other projects: [physioflow](https://github.com/victorgomezadapty/physioflow) · [ADAPTY](https://adapty.global)
