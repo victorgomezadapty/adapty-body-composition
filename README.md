@@ -9,6 +9,8 @@
 
 A portfolio-grade MVP for coaches, physiotherapists, and sports scientists working with bioelectrical impedance analysis (BIA) data.
 
+> This synthetic-data MVP has a private production evolution, **ADAPTY InBody Intelligence**, that processes real InBody 770 exports with SHA-256 anonymization, cohort percentile analytics, a rule-based coach report, a Streamlit dashboard, and a Next.js frontend (77 tests). It stays private to protect client data; access is available for reviewers on request.
+
 ---
 
 ## Why this exists (from a physiotherapist's perspective)
